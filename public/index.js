@@ -56,6 +56,8 @@ form.addEventListener("submit", async (event) => {
 		await connection.setTransport("/libcurl/index.mjs", [
 			{ websocket: wispUrl },
 		]);
+		libcurl.load_wasm()
+		console.log(1)
 	}
 	const frame = scramjet.createFrame();
 	frame.frame.id = "sj-frame";
