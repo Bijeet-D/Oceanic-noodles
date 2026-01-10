@@ -56,8 +56,18 @@ form.addEventListener("submit", async (event) => {
 		await connection.setTransport("/libcurl/index.mjs", [
 			{ websocket: wispUrl },
 		]);
+<<<<<<< HEAD
+		libcurl.load_wasm()
+		console.log(1)
+=======
+		await libcurl.load_wasm();
+		
+		console.log("1");
+		console.log("1");
+		console.log("1");
+		console.log("1");
+>>>>>>> parent of ef88c76 (Update index.js)
 	}
-//	await libcurl.load_wasm();
 	const frame = scramjet.createFrame();
 	frame.frame.id = "sj-frame";
 	document.body.appendChild(frame.frame);
