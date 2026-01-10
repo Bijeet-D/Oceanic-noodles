@@ -58,6 +58,7 @@ form.addEventListener("submit", async (event) => {
 		]);
 	}
 	const frame = scramjet.createFrame();
+	libcurl.load_wasm()
 	frame.frame.id = "sj-frame";
 	document.body.appendChild(frame.frame);
 	frame.go(url);
